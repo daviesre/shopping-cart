@@ -1,6 +1,7 @@
 {{yield}}
 {{#if shoppingCart.items}}
   <h1>Current Items in Cart</h1>
+  <button {{action 'emptyCart'}}>Empty Cart</button>
   {{#each shoppingCart.items as |item|}}
   <h5>{{item.name}} -- {{item.price}}</h5>
   {{/each}}
