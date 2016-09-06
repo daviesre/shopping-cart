@@ -1,0 +1,5 @@
+{{yield}}
+{{product.name}} for ${{product.price}}
+
+<button {{action 'addToCart' product}}>Add to Cart</button>
+<button {{action 'removeFromCart' product}}>Remove All {{product.name}}</button>

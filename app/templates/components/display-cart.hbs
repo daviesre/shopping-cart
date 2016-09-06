@@ -1,0 +1,9 @@
+{{yield}}
+{{#if shoppingCart.items}}
+  <h1>Current Items in Cart</h1>
+  {{#each shoppingCart.items as |item|}}
+  <h5>{{item.name}} -- {{item.price}}</h5>
+  {{/each}}
+{{else}}
+  <h1>Your Cart is Empty</h1>
+{{/if}}
