@@ -1,5 +1,17 @@
 {{yield}}
-{{product.name}} for ${{product.price}}
-
-<button {{action 'addToCart' product}}>Add to Cart</button>
-<button {{action 'removeFromCart' product}}>Remove</button>
+<div class="container product-container">
+  <div class="product">
+    <div class="row">
+      <div class="col-xs-8">
+        <span class="name">{{product.name}}</span>
+      </div>
+      <div class="col-xs-4">
+        <span class="price">${{product.price}}</span>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-success" {{action 'addToCart' product}}>Add to Cart</button>
+      <!-- <button class="btn btn-danger" {{action 'removeFromCart' product}}>Remove</button> -->
+    </div>
+  </div>
+</div>

@@ -7,7 +7,10 @@ export default Ember.Service.extend({
     this.get('items').pushObject(item);
   },
   remove(item) {
-    this.get('items').popObject(item);
+    var index = this.get('items').indexOf(item);
+    if (index >= 0) {
+      this.get('items').removeAt(index);
+    }
   },
   empty() {
     this.set('items', []);

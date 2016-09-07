@@ -1,6 +1,15 @@
 {{outlet}}
-{{#each model as |product|}}
-  {{product-tile product=product}}
-{{/each}}
 
-{{display-cart}}
+{{#parallax-content speed=1.5 }}
+  <div>
+    {{#each model as |product|}}
+    {{product-tile product=product}}
+    {{/each}}
+
+    {{display-cart}}
+  </div>
+{{/parallax-content}}
+
+<!-- {{#parallax-content speed=0.5 height=400 }}
+<img src="http://www.planwallpaper.com/static/images/Cool-HD-Wallpapers-1.jpg">
+{{/parallax-content}} -->

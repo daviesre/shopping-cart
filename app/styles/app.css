@@ -1,0 +1,22 @@
+.name, .price {
+  font-size: 30px;
+}
+
+body {
+  color: white;
+  background-image: url("http://www.walldevil.com/wallpapers/w01/429540-galaxy-nebula-outer-space-stars.jpg");
+}
+
+.product {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cart-product {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 20px;
+}
